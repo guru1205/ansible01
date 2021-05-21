@@ -3,6 +3,6 @@
   become: yes
   tasks:
   - name: I want to install apche2 software
-    app: 
+    apt: 
      name: apache2
      state: present
