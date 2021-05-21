@@ -1,0 +1,8 @@
+---
+- host: all
+  become: yes
+  task:
+  - name: I want to install apche2 software
+    app: 
+     name: apache2
+     state: present
