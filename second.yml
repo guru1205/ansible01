@@ -1,7 +1,7 @@
 ---
-- host: all
+- hosts: all
   become: yes
-  task:
+  tasks:
   - name: I want to install apche2 software
     app: 
      name: apache2
