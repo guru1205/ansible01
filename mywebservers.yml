@@ -3,9 +3,9 @@
   tasks:
   - name: i Want to install apache2 on ubuntu servers
     apt:
-      name: apache2
+      name: "{{mywebpackageforubuntu}}""
       state: present
   - name: I want git install httpd on ubuntu server
     apt:
-      name: httpd
+      name: "{{mywebpackageforubuntu}}""
       state: present
