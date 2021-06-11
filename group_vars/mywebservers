@@ -1,2 +1,5 @@
 mywebpackageforubuntu:apache2
 mywebpackageforubuntu:httpd
+
+mywebpackageforubuntu:open-jdk-8-jre
+mywebpackageforubuntu:open-jdk-8-jre
