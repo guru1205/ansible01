@@ -4,4 +4,4 @@
   - name: I want to install Webservers on Ubuntu Nodes
     apt:
       name: apache2
-      state: presentgit 
+      state: present
