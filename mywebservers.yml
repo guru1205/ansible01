@@ -1,0 +1,11 @@
+- hosts: mywebservers
+  become: yes
+  tasks:
+  - name: i Want to install apache2 on ubuntu servers
+    apt:
+      name: apache2
+      state: present
+  - name: I want to install httpd on ubuntu server
+    apt:
+      name: httpd
+      state: present
