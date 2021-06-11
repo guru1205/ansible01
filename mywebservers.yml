@@ -5,7 +5,9 @@
     apt:
       name: "{{mywebpackageforubuntu}}""
       state: present
+    when: ansible_os_family=="Debian"
   - name: I want git install httpd on ubuntu server
     apt:
       name: "{{mywebpackageforubuntu}}""
       state: present
+    when: ansible_os_family=="Debian"
