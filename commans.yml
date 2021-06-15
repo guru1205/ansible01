@@ -1,0 +1,10 @@
+---
+- hosts: 172.31.31.240
+  become: yes
+  tasks:
+  - name: I want to display the hostname
+    command: hostname
+    registry: myresult
+  - name: i Want to display first tasks
+    debug:
+      msg: "{{myresult}}"
