@@ -10,6 +10,7 @@
     apt: 
       name: tree
       staate: present
+    ignore_errors: yes
   - name:
     apt:
       name: wget
