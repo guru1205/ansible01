@@ -1,0 +1,4 @@
+  - name: i want to crate files on ubuntu node
+    file:
+      path: /home/ubuntu/text.txt
+      state: touch
