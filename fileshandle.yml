@@ -2,7 +2,7 @@
 - hosts: 172.31.31.240
   become: yes
   tasks:
-  - include_task: file.yml 
+  - include_tasks: file.yml 
   - name: install webserver
     apt:
      name: apache2
