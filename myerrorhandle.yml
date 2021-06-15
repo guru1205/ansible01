@@ -4,7 +4,7 @@
   tasks:
   - name: I want to install Git
     apt:
-      name: Git
+      name: git
       state: present
   - name: I want to install tree
     apt: 
