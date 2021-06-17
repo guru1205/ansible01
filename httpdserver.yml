@@ -5,7 +5,7 @@
   - name: install httpd server
     apt: 
       name: httpd
-      state: present
+      state: latest
   - name: copy index.html
     copy:
       src: index.html
