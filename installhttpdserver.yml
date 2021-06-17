@@ -8,8 +8,8 @@
        state: present
   - name: copy index.html
     copy: 
-    src: index.html
-    dest: /vae/www/html/index.html
+      src: index.html
+      dest: /vae/www/html/index.html
   - name: start httpd service
     service: 
       name: httpd
