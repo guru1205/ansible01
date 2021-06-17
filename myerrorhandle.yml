@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.31.240
+- hosts: appservers
   become: yes
   tasks:
   - name: I want to install Git
