@@ -2,15 +2,11 @@
 - hosts: appservers
   become: yes
   tasks:
-  - name: install httpd server
+  - name: install nginx server
     apt: 
-      name: httpd
-      state: latest
-  - name: copy index.html
-    copy:
-      src: index.html
-      dest: /var/www/html/index.html
-  - name: service httpd start
+      name: nginx
+      state: present
+  - name: service nginx start
     service:
-      name: httpd
+      name: nginx
       state: started
