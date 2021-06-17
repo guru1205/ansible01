@@ -1,7 +1,8 @@
 ---
 - hosts: appservers
- become: true
- tasks:
- - name: Install list of packages
- yum:
- name: ['httpd', 'wget', 'vim', 'zip', 'unzip']
+  become: true
+  tasks:
+  - name: Install list of packages
+    apt:
+     name: ['httpd', 'wget', 'vim', 'zip', 'unzip']
+     state: present
