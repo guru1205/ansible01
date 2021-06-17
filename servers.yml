@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: appservers
  become: true
  tasks:
  - name: Install list of packages
