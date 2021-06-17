@@ -1,0 +1,12 @@
+---
+- hosts: appservers
+  become: yes
+  tasks:
+  - name: install Httpd server
+    apt:
+      name: httpd
+      state: present
+  - name: service  httpd restart
+    service:
+      name: httpd
+      state: restarted
