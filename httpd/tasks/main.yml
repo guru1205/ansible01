@@ -1,2 +1,23 @@
 ---
 # tasks file for httpd
+- name: install httpd server
+  apt:
+    name: "{{package_name}}"
+    state: present
+  tags:
+  - install
+- name: copy index.html
+  template:    
+    src: index.html
+    dest: /var/www/html/index.hyml
+  notify:
+  - start httpd service
+  tags:
+  - copy
+- name: Debug Message
+  debug:
+    msg: After copy task name varible:"{{name}}"
+  tags:
+  - debug
+  - install
+

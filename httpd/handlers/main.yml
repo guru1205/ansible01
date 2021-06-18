@@ -1,2 +1,7 @@
 ---
 # handlers file for httpd
+- name: service start httpd
+  service:
+    name: httpd
+    state: restarted
+  
